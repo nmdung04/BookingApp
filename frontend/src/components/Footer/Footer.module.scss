@@ -1,0 +1,159 @@
+.footer {
+  background: #f8f9fa;
+  padding: 4rem 0 0;
+  margin-top: 3rem;
+
+  .footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .companyInfo {
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact {
+      p {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        i {
+          color: #f00;
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  .quickLinks {
+    h3 {
+      color: #333;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.8rem;
+
+        a {
+          color: #666;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #f00;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    h3 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .subscribeForm {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+
+      input {
+        flex: 1;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        outline: none;
+
+        &:focus {
+          border-color: #f00;
+        }
+      }
+
+      button {
+        background: #f00;
+        color: #fff;
+        border: none;
+        padding: 0 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #d00;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        color: #666;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #f00;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 1px solid #ddd;
+
+    p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 0;
+
+    .footerContainer {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .newsletter {
+      .subscribeForm {
+        flex-direction: column;
+
+        button {
+          width: 100%;
+          padding: 0.8rem;
+        }
+      }
+    }
+  }
+}
